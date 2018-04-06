@@ -1,16 +1,3 @@
-.wrapper {
-	width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-
-.contentWrapper {
-	clear: both;
-	position: relative;
-	width: 100%;
-	}
-
 
 a {text-decoration: none;}
 
@@ -32,7 +19,10 @@ background-color: #f4a460;
 }
 
 .container {
-    position: relative;
+    position: absolute;
+top: 0px;
+width: 100%;
+   
 }
 
 div.abs {
@@ -59,7 +49,7 @@ img.L {
 
 img.B {
     height: 150px;
-    width: 1000px;
+    width: 100%;
 }
 
 ul.h {
@@ -85,7 +75,7 @@ div.top_right {
 div.bar {
     position: absolute;
     top: 163px;
-    
+width: 70%;
 }
 
 ul.fr {
@@ -101,8 +91,9 @@ ul.fr {
 
 div.f {
     position: absolute;
-    top: 585px;
-    width: 990px; 
+    bottom: 5px;
+    width: 100%; 
+height: 10%;
 }
 
 a.h {
@@ -133,7 +124,6 @@ li.n {
 	color: blue;
 	text-align: center;
 }
-
 div.map {
 position: absolute;
     top: 163px;
@@ -141,9 +131,18 @@ width: 100%;
 height: 70%;
 }
 
+table.t {
+    border-collapse: collapse;
+	width: 100%;
+}
+td.td {
+	padding: 0px;
+text-align: center;
+}
+
 iframe.if {
-	width: 655px;
-	height: 420px;
-        border: none;
-        float: right;
- }
+	width: 100%;
+	height: 100%;
+    border: none;
+}
+

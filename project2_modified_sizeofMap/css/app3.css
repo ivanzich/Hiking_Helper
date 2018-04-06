@@ -1,16 +1,3 @@
-.wrapper {
-	width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-
-.contentWrapper {
-	clear: both;
-	position: relative;
-	width: 100%;
-	}
-
 
 a {text-decoration: none;}
 
@@ -31,9 +18,6 @@ background-color: #f4a460;
 	width: 100%;
 }
 
-.container {
-    position: relative;
-}
 
 div.abs {
     position: absolute;
@@ -44,7 +28,7 @@ div.abs {
 div.name {
     position: absolute;
     left: 40%;
-	top: 25%;
+	top: 8%;
 	text-align: center;
 	font-size: 36px;
 	color: white;
@@ -58,8 +42,8 @@ img.L {
 }
 
 img.B {
-    height: 150px;
-    width: 1000px;
+    height: 200px;
+    width: 100%;
 }
 
 ul.h {
@@ -82,12 +66,6 @@ div.top_right {
     right: 10px;
 }
 
-div.bar {
-    position: absolute;
-    top: 163px;
-    
-}
-
 ul.fr {
 	list-style-type: none;
     margin: 0;
@@ -99,11 +77,6 @@ ul.fr {
 	overflow-y: scroll;
 }
 
-div.f {
-    position: absolute;
-    top: 585px;
-    width: 990px; 
-}
 
 a.h {
     display: block;
@@ -134,16 +107,18 @@ li.n {
 	text-align: center;
 }
 
-div.map {
-position: absolute;
-    top: 163px;
-width: 100%;
-height: 70%;
+table.t {
+    border-collapse: collapse;
+    width: 100%;
 }
 
 iframe.if {
-	width: 655px;
+	width: 1000px;
 	height: 420px;
         border: none;
-        float: right;
- }
+}
+
+td.td {
+	padding: 0px;
+text-align: center;
+}
