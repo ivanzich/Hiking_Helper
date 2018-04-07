@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var park = {lat: 37.770004, lng: -122.467420};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: park
+        });
+
+          var contentString = '<h1>Golden Gate Park</h1>'+
+            '<p>Golden Gate Park, located in San Francisco, California, United States, is a large urban park consisting of 1,017 acres (412 ha) of public grounds. It is administered by the San Francisco Recreation & Parks Department, which began in 1871 to oversee the development of Golden Gate Park. Configured as a rectangle, it is similar in shape but 20 percent larger than Central Park in New York, to which it is often compared. It is over three miles (4.8 km) long east to west, and about half a mile (0.8 km) north to south.[3] With 13 million visitors annually, Golden Gate is the fifth most-visited city park in the United States after Central Park in New York City, Lincoln Park in Chicago, and Balboa and Mission Bay Parks in San Diego.<br><br> <a href="https://www.alltrails.com/parks/us/california/golden-gate-park">'+
+            'https://www.alltrails.com/parks/us/california/golden-gate-park</a></p>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: park,
+          map: map,
+          title: 'Golden Gate Park'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxP9I-vgyRuABmAZiRu_rg-iKqcRs9M6w&callback=initMap">
+    </script>
+  </body>
+</html>
