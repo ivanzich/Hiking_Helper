@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather Forecast</title>
+
+<link rel="stylesheet" href="css/weather.css">
+
+<body style="text-align:center; background-color:#f5f5dc;">
+	
+<section class="forecast row">
+<h2>Forecast</h2>
+
+<!-- display user input and submit button -->
+<div class="weatherForm">
+<form>
+<input type="text" name="zipCode" id="weatherZipCode" placeholder="San Francisco, CA, 94121">
+<button type="submit" name="submitButton" id="weatherForecastButton">Forecast
+</button>
+
+<!-- display warnings -->
+<p class="inputWarning">Please input a valid Zipcode or City Name (Format: San FRancisco, CA or 94121)</p>
+</form>
+</div>
+
+<!-- for displying forecast -->
+<div class="row">
+<div class="locationForecast  col s12 m12 l12">
+</div>
+<div class="dailyForecast col s12 m12 l12">
+</div>
+</div>
+            
+</section>
+
+ <!--  It's necessary for executing our weather.js -->       
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<script type="text/javascript" src="javascript/weather.js"></script>
+
+</body>
+</html>
