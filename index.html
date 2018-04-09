@@ -2,25 +2,39 @@
 <html lang="en">
 
 <head>
-    <!-- This is a comment 
+    <!-- This is a comment
 purpose:  -->
     <title>San Francisco Hiking Helper App</title>
     <meta name="description" content="Hiking Helper App">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/app.css">
 
+    <script src="js/trailsData.js"></script>
+
 <style>
-		
+
 td {
 	padding: 0px;
 }
 
 </style>
 
+<!-- copy pasted form one of the map pages -->
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+<style>
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+
+</style>
+
 </head>
 
 <body class="center">
-    
+
         <header class="center">
             <img class="B" src="images/banner/panorama.jpg" alt="San Francisco">
 
@@ -29,46 +43,36 @@ td {
             </div>
 
             <div class="name">
-                San Francisco<br>Hiking Helper App
+                San Francisco<br>Hiking Helper
             </div>
 
             <div class="top_right">
                 <ul class="h">
-                    <li class="h"><a class="h" href="imgmap2.html" onclick="window.open('imgmap2.html', 'newwindow', 
-	'width=700,height=400'); 
+                    <li class="h"><a class="h" href="imgmap2.html" onclick="window.open('imgmap2.html', 'newwindow',
+	'width=700,height=400');
 	 return false;">Weather</a></li>
                     <li class="h"><a class="h" href="app.html">Weather2</a></li>
                 </ul>
             </div>
 
         </header>
-		
+
+        <!-- listing of top 10 SF hikes; see trailLinks below -->
 		<table class="t">
 		  <tr>
 		    <td class="td" width="30%">
-				<ul class="fr">
-                <li class="n">Famous routes</li>
-                <li class="r"><a href="GoldenGateBridge.html" target="ifr">Golden Gate Bridge</a></li>
-                <li class="r"><a href="GoldenGatePark.html" target="ifr">Golden Gate Park</a></li>
-                <li class="r"><a href="FishermansWharf.html" target="ifr">Fisherman's Wharf</a></li>
-                <li class="r"><a href="imgmap2.html">Hello Here</a></li>
-                <li class="r"><a href="imgmap2.html">Hello Here</a></li>
-                <li class="r"><a href="imgmap2.html">Hello Here</a></li>
-                <li class="r"><a href="imgmap2.html">Hello Here</a></li>
-                <li class="r"><a href="imgmap2.html">Hello Here</a></li>
-                <li class="r"><a href="imgmap2.html">Hello Here</a></li>
-            </ul>
-		</td>
-		    
-			<td class="td" width="70%">
-				<iframe class="if" src="SanFrancisco.html" name="ifr">
-				</iframe>
+				<ul class="fr" id="trailLinks">
+                </ul>
+		    </td>
+
+			<td class="td" width="70%" id="map">
+
             </td>
 		  </tr>
-	
-		</table>	
-			
-      
+
+		</table>
+
+
             <footer class="copyright">
                 <br> Contact us: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
                 <br> Copyright &copy; San Francisco Hiking Helper, 2018
@@ -81,8 +85,11 @@ td {
                 </script>
 
             </footer>
-         
 
+            <script src="js/main.js"></script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxP9I-vgyRuABmAZiRu_rg-iKqcRs9M6w&callback=initMap">
+            </script>
 
 </body>
 
