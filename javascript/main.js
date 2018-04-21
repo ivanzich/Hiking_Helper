@@ -13,9 +13,31 @@ function switchToMarker(markerIndex) {
      map.setCenter(markers[markerIndex].position);
 }
 
+function makeContentStringFromTrailData(trail) {
+
+    var htmlString =  '<table><tr><td><img style="float: left; width="180px" height="180px;" src="'
+    + trail.imageUrl + '" alt="'+ trail.title + '"></td><td align="center">';
+    htmlString += '<h1>' + trail.title + '</h1>';
+    htmlString +=     '<ul style="font-size:15px; list-style-type:none"> \
+            <li>Distance: <strong>' + trail.distance + '</strong></li> \
+            <li>Elevation: <strong>' + trail.elevation + '</strong></li> \
+            <li>Type: <strong>' + trail.type + '</strong></li> \
+            <li>Difficulty: <strong>' + trail.difficulty + '</strong></li> \
+            <li>Traffic: <strong>' + trail.traffic + '</strong></li>';
+    if (trail.dogs !== undefined) {
+        htmlString += '<li>Dogs allowed: <strong>' + trail.dogs + '</strong></li>';
+    }
+    htmlString += "</ul>";
+    htmlString += '<a href="' + trail.url + '" target="_blank" style="font-size:100%;">Learn more about ' + trail.title + '</a>';
+
+    htmlString += "</td></tr></table>";
+    return htmlString;
+}
+
+
 function makeMarker(map, trailData) {
    var infowindow = new google.maps.InfoWindow({
-     content: trailData.contentString
+     content: makeContentStringFromTrailData(trailData)
    });
 
    var marker = new google.maps.Marker({
