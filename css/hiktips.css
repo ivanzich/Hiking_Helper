@@ -1,0 +1,24 @@
+/* for hiking tips button*/
+
+div.right {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+
+/* for page */
+.tips {
+	background-color:#e6fff5;
+	width: 100%;
+	height: 96vh;
+}
+
+h2.ht {
+	color: #000000;
+	text-align: center;
+	font-weight: bold; 
+	font-style: italic; 
+	font-size:30pt; 
+	font-family:Arial;
+}
+
