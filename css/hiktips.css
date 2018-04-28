@@ -1,0 +1,82 @@
+/* for hiking tips button*/
+
+div.right {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+
+/* for page */
+.tips {
+	background-color:#e6fff5;
+	width: 100%;
+	height: 170vh;
+}
+
+/* for text on the page*/
+h1.ht {
+    color: blue;
+    margin-left: 10px;
+    margin-left: 10px;    
+    font-size: 35px; 
+}
+
+h3.ht {
+	color: green;
+	font-size: 25px;
+}
+
+p.ht {
+   font-size: 15px;
+   text-align: justify;
+   text-indent: 50px;
+   font-family: "Comic Sans MS";
+}
+
+/* for our tables*/
+.routes {
+    width: 100%;
+    text-align: left;
+    border-spacing: 10px;
+}
+
+.hiktips {
+    width: 100%;
+    text-align: left;
+    border-spacing: 10px;
+}
+
+td.ht {
+   padding: 2px;
+   border-style: dashed;
+   background-color: white;
+   font-size: 13px;
+}
+
+/*for links inside tables*/
+a.ht {
+    color: blue;
+}
+
+a.ht:hover {
+    background-color: transparent;
+}
+
+/*lists inside tables*/
+ul.ht {
+   list-style-type: disc;
+   float: left;
+}
+
+ul.htt {
+   list-style-type: none;
+   float: left;
+}
+
+/*Chapter name inside tables*/
+p.bh {    
+    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}

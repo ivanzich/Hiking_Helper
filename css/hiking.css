@@ -1,0 +1,54 @@
+
+ /* This is for header  */
+h1.hk {
+    color: navy;
+    margin-left: 20px;
+	font-size: 40px;	
+}
+h2 {
+    color: navy;
+	/* background-color: rgba(255, 0, 0, 0.8); */
+    margin-left: 20px;
+	 font-size: 20px;
+	
+}
+/* for paragraph */
+p {
+    text-align: center;
+    color: black;
+}
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+img { 
+    display: inline-block;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
