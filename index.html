@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- This is a comment 
+purpose:  -->
+<title>San Francisco Hiking Helper App</title>
+<meta name="description" content="Hiking Helper App">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/weather.css">
+<link rel="stylesheet" href="css/hiktips.css">
+<link rel="stylesheet" href="css/comments.css">
+<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script src="javascript/trailsData.js"></script>
+</head>
+
+<body class="center">
+ <!-- our banner with logo and weather button -->   
+<header class="center">
+	
+<!-- banner -->
+<img class="B" src="images/banner/panorama.jpg" alt="San Francisco">
+
+<!-- logo -->
+<div class="abs">
+<img class="L" src="images/logo/h2.png" alt="Logo">
+</div>
+
+<!-- name of app -->
+<div class="name">
+San Francisco<br>Hiking Helper App
+</div>
+
+<!-- weather, comments, photo buttons -->
+<div class="top_right">
+<ul class="h">
+<!-- <li class="h"><a class="h" href="weather.html" onclick="window.open('weather.html', 'newwindow', 
+'width=700,height=550'); 
+return false;">Weather</a></li> -->
+<li class="h"><a href="index.html" class="navBtn" data-name="forecast" style="color:white;">
+Weather</a></li>  
+ <li class="h"><a class="h" href="comments.html">Comments</a></li>
+ <li class="h"><a class="h" href="photoGallery.html">Photo</a></li>
+</ul>
+ </div>
+
+
+<!-- Hiking tips button-->
+<div class="right">
+<ul class="h">
+<li class="h"><a href="index.html" class="navBtn" data-name="tips" style="color:white;">Hiking tips</a></li>  
+</ul>
+</div>
+
+</header>
+
+<!-- table for map and scroll bar with routes -->		
+<table class="t">
+<tr>
+<!-- our scroll bar -->
+<td class="td" style="width:300px">
+<ul class="fr" id="trailLinks">
+</ul>
+
+</td>
+<td class="td" id="map">
+</td>
+</tr>
+
+</table>
+
+<div class="divide">
+</div>
+
+<!-- weather -->			
+<section class="forecast">
+<h2>Forecast</h2>
+
+<!-- display user input and submit button -->
+<div class="weatherForm">
+<form>
+<input type="text" name="zipCode" id="weatherZipCode" placeholder="San Francisco, CA, 94121">
+<button type="submit" name="submitButton" id="weatherForecastButton">Forecast
+ </button>
+
+<!-- display warnings -->
+<p class="inputWarning">Please input a valid Zipcode or City Name (Format: San FRancisco, CA or 94121)</p>
+</form>
+</div>
+
+<!-- for displying forecast -->
+<div class="row">
+<div class="locationForecast  col s12 m12 l12">
+</div>
+<div class="dailyForecast col s12 m12 l12">
+</div>
+</div>        
+</section>
+
+<!-- handle hiking tips -->
+<section class="tips">
+<div class="divide">
+</div>  	
+<h1 class="ht">Hiking tips</h1>
+<p class="ht">If you ask anyone what they did over the weekend (or what’s on tap for the next one) 
+one response you’re sure to hear in the Bay Area is, “hiking”.
+One of the best parts of living in San Francisco is that there’s so much to explore. 
+Like all the hiking trails in and around the city, perfect for getting your fitness on.
+Whether you’re looking for a rigorous workout, a scenic stroll with friends, 
+or a romantic walkabout, there’s an SF-area hike perfect for you.
+Many hiks are so nice we do them over and over again, repeating best adventures previously 
+discovered and exploring more hidden opportunities each time we go.</p>
+<p class="ht">Do you know that 'hiking' is the preferred term, in Canada and the United States, 
+for a long, vigorous walk, usually on trails, in the countryside, while the word
+walking is used for shorter, particularly urban walks. In the United Kingdom, and the Republic 
+of Ireland, the word "walking" is acceptable to describe all forms of walking, whether it is 
+a walk in the park or backpacking. The term bushwalking is endemic to Australia, 
+having been adopted by the Sydney Bush Walkers club in 1927. In New Zealand a long, 
+vigorous walk or hike is called tramping. It is a popular activity with numerous hiking
+organizations worldwide, and studies suggest that all forms of walking have health benefits.
+</p>
+
+<table class="hiktips">
+<tr>
+<td class="ht" width="500px">
+<ul class="htt">
+<p class="bh">Safety Tips</p>
+<p>Without proper planning and packing, even a short day hike could turn 
+into a potentially dangerous outing. So, before you brush off weekday stress and 
+lace up your hiking boots, remember these eight hiking safety tips.</p>
+<li><b>1. Make a Gear List</b><br>
+Make a gear list before heading out to make sure you have everything you might need. 
+The must-have list includes: water, extra water, rain gear, compass, map and extra food.</li>
+<li><b>2. Bring a Map</b><br>
+You should never rely only on GPS technology, especially with limited service and 
+unreliable battery power. Always pack a map, and if you're not sure how to read one, 
+take some time to learn beforehand.</li>	
+<li><b>3. Hike During the Day</b><br>
+Plan to hike during the day; the region where you're hiking may be home to a variety 
+of wild animals that come slinking out at night. The best way to avoid being stuck out 
+in the dark is to set a turnaround time. Regardless of how far you hike, you should 
+stick to your predetermined time to ensure you finish hiking before the sun goes down.</li> 	
+<li><b>4. Know the Area</b><br>
+Exploring new hiking trails is always exciting. Before heading out, check regional
+hiking information for: Local wild animals and what to do if you come across one; 
+Local poisonous plants—think poison ivy, sumac, oak; Local hunting areas/seasons;
+Any and all hiking alerts.</li>
+<li><b>5. Check the Forecast before you leaving</b><br>
+This is important in determining what gear you need to bring, like a rain jacket, sunscreen, 
+extra water or warmer clothing.</li>
+<li><b>6. Be Confident Not Cocky</b><br>
+Whether you've hiked 30 times or five, you know what you can and can't handle.
+Don't risk injury; be honest with your skill level before hitting the trail.</li>
+<li><b>7. Tell Someone Before You Go</b></li>
+<li><b>8. Stay Together</b><br>
+Last but not least, stick together, if you are going in the group.</li><br>
+<a href="http://exotichikes.com/11-ways-to-stay-safe-while-hiking-what-every-hiker-should-know/" class="ht" target="_blank">more info</a>
+</ul>
+</td>
+
+<td class="ht" width="300px">
+<ul class="ht">
+<p class="bh">Hiking with Kids</p>
+<p>Hiking with your children is a great way to get them connected to the outdoors. 
+Just remember to keep the goals easy.</p>
+<li>Start with short hikes that feature a goal — the waterfall you came to 
+see, the lake where you can wade and play</li>
+<li>Plan to take a lot of extra time. If you don’t reach your goal because 
+the kids want to explore under every leaf, then that’s a good hike, too.  
+With children, it’s about the journey, not the destination.</li>
+<p class="bh">Hiking with Dogs</p>
+<li>Make sure your dog is up to date on all vaccinations and ensure those 
+identification tags are firm on the collar.</li>
+<li>Remember that dogs need to train and condition for longer hikes, too, 
+so don’t forget to bring them along on your short day trips.</li>
+<li>With a special pack and time to get used to it, your dog can carry 
+his or her own provisions.</li>
+<li>Do a thorough health check at the end of each day, and include canine-friendly
+supplies in your first aid kit.</li>
+<li>Always check the trail rules before you go; you don’t want your dog 
+harassing wildlife. National Park trails do not allow dogs, while other 
+public lands simply require dogs to be on a leash.</li><br>
+<a href="https://wilderness.org/article/tips-great-hiking" class="ht" target="_blank">
+More Tips for Great Hiking</a><br>
+<a href="https://modernhiker.com/9-rules-for-hiking-in-hot-weather/" class="ht" target="_blank">
+Tips for Hiking in Hot Weather</a><br>
+<a href="http://blog.theclymb.com/passions/hike/7-tips-for-a-safe-night-hike/" class="ht" target="_blank">
+Tips for Night Hiking</a><br>
+<a href="https://www.outdoorresearch.com/blog/article/10-tips-for-making-rainy-backpacking-way-better" class="ht" target="_blank">
+Tips for Hiking in the Rain</a>
+</ul>
+</td>
+</tr>
+</table>
+
+<table class="routes">
+<tr>
+<td class="ht" width="200px">
+
+<ul class="ht">
+<p class="bh">Benefits of Hiking</p>	
+<li>Lower your risk of heart disease</li>
+<li>Improves your blood pressure<br>
+and heart rate.</li>
+<li>Strengthen your core</li>
+<li>Improve balance</li>
+<li>Help control your weight</li>
+<li>Boost your mood</li><br>
+<a href="https://www.kent-teach.com/Blog/post/2017/04/25/6-benefits-of-getting-fresh-air.aspx" 
+class="ht" target="_blank">6 Benefits of Getting Fresh Air</a>	
+</ul>
+</td>
+
+<td class="ht" width="300px">
+<ul class="ht">
+<p class="bh">Tips to Help Make your San Francisco Hiking better:</p>	
+<li><b>Dress in layers! </b>Temperatures can vary dramatically
+from one side of a hill to another 
+or from morning until afternoon.</li>
+<li><b>Yes, there are hills. </b>Don’t try to do too much 
+the first time if you are not in good shape. 
+That’s no fun.</li>
+<li><b>Watch for interesting opportunities. </b> 
+San Francisco is full of great nooks and crannies 
+where it is worth your while to spend more time. 
+Stop and smell the many beautiful roses.</li><br>
+<a href="https://americanhiking.org/hiking-resources/" class="ht" target="_blank">
+Hiking Resources</a>
+</ul>
+</td>
+
+<td class="ht" width="200px">	
+<a href="https://bahiker.com/plantpages/troubleplants.html" class="ht" target="_blank">
+San Francisco Hiking Dangers:<br>
+poison oak, tick, spiders, bees, mountain lion,<br>
+wild pigs, coyotes, rattlesnakes</a><br><br>
+<a href="http://sfbaywildlife.info/species/species.htm" class="ht" target="_blank">
+Wildlife Species of San Francisco Bay Area</a><br><br>	
+<a href="https://sfenvironment.org/green-connections-local-plants-animals-san-francisco-neighborhoods"
+class="ht" target="_blank">Local Plants and Animals in San Francisco</a><br><br>	
+<a href="http://www.sfbaywildlife.info/species/insects.htm" class="ht"
+target="_blank">Insects of San Francisco Bay Area</a><br><br>
+<a href="https://www.rentokil.com/blog/8-ways-to-avoid-mosquito-bites-when-travelling/#.Wt0YCMgh0yk"
+class="ht" target="_blank">Ways to Avoid Mosquito Bites</a><br><br>
+<a href="https://wwwnc.cdc.gov/travel/yellowbook/2018/the-pre-travel-consultation/protection-against-mosquitoes-ticks-other-arthropods" class="ht" target="_blank">
+Protection against Mosquitoes, Ticks, & Other Arthropods</a>
+</td>
+
+</tr>
+</table>
+</section>
+
+
+<!-- our footer -->	  
+<footer class="copyright">
+<br> Contact us: <a href="mailto:hiking_helper@yahoo.com">hiking_helper@yahoo.com</a>
+<br> Copyright &copy; San Francisco Hiking Helper, 2018
+
+ <script>
+ var dateModified = document.lastModified;
+ mydate = dateModified.slice(0, 16);
+ document.write("| Last updated: " + mydate);
+</script>
+</footer>	
+
+         
+ <!--  It's necessary for executing our weather.js -->       
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<script src="javascript/scrollWind.js"></script>
+<script src="javascript/weather.js"></script>
+<script src="javascript/main.js"></script>
+<script async defer            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxP9I-vgyRuABmAZiRu_rg-iKqcRs9M6w&callback=initMap"></script>
+
+</body>
+
+</html>
