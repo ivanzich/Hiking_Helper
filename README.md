@@ -40,7 +40,7 @@ different hiking routes. If user click on photo it will be displayed bigger phot
 corner of Photo Gallery page user can find button "Go back" to return to main page.)
 
 * Displaying Hiking Tips
-(Clicking on button 'Hiking_tips' will be scrolled down from main page to the Hiking Tips page, where user
+(Clicking on button 'Hiking tips' will be scrolled down from main page to the Hiking Tips page, where user
 can found a lot of useful information about: hiking tips, different types of hiking, benefits of hiking,
 how user can protect yourself from dangerous local plants, animals, insects. Also this page contains 
 a lot of useful links, which will redirect user to other web pages and let user to find more useful information).
