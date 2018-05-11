@@ -1,0 +1,142 @@
+/* for links */
+a {text-decoration: none;}
+
+a:hover { 
+	text-decoration: none;
+	background-color: #48c9b0;
+}
+
+.center {text-align: center;}
+
+/* for footer */
+.copyright {
+	padding: 5px;
+	background-color: #86B500;
+	font-weight: bold;
+	font-style:italic; 
+	color: #000;
+	text-align: center;
+	width: 100%;
+}
+
+a.f:hover {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* for logo */
+div.abs {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+img.L {
+    width: 120px;
+    height: 70px;
+}
+
+/* for name of app */
+div.name {
+    position: absolute;
+    left: 40%;
+	top: 5%;
+	text-align: center;
+	font-size: 36px;
+	color: white;
+	font-weight: bold;
+	font-style:italic;
+}
+
+/* for banner */
+img.B {
+    height: 200px;
+    width: 100%;
+}
+
+/* for buttons weather...*/
+ul.h {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;
+}
+
+li.h {
+    float: left;
+	display: inline;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+div.top_right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+ul.fr {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e6fff5;
+    height: 420px;
+    overflow-y: scroll;
+}
+
+
+a.h {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* for scroll bar with routes */
+li a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.r {
+	display: inline;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+li.n {
+	font-weight: bold;
+	font-size: 25px;
+	color: blue;
+	text-align: center;
+}
+
+/* for putting map and scroll bar */
+    table.t {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td.td {
+    padding: 0px;
+    text-align: center;
+}
+
+/* for map */
+/* Always set the map height explicitly to define the size */
+/* of the div element that contains the map. */
+#map {
+    height: 100%;
+  }
+
+/* for divide pages */
+.divide {
+    background-color: #86B500;
+    width: 100%;
+    height: 50px;
+} 
