@@ -31,7 +31,7 @@ If user put wrong zip-code or city-name or state it display error message).
 (Clicking on button 'Comments' will be redirected to the Comments page, where user can add comments 
 or upload images. Added Comments automatically will be uploaded to the page. Added Images can be 
 uploaded on the page only after Admin of App will approve it. Only Admin can delete comments 
-and images. User can upload images with next format: ____________
+and images. User can upload images with next format: png, jpg, gif, jpeg. 
 In the right top corner user can click button "Go back" to return to main page).
 
 * Displaying Photo Gallery
