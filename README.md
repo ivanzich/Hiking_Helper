@@ -18,7 +18,7 @@ On the top of the main page and user can see banner and navigation bar with butt
 San Francisco hikes. On the right side user can see the map by default with the location
 of 'Moraga Steps' hike.
 
-* Displaying most famous hikes on a map along with the pins, descriptions and images. 
+* Displaying the most famous hikes on a map along with the pins, descriptions and images. 
 (Clicking on the name of hike in the navigation bar will be automatically redirected to the map with pin.
 Clicking on pin will show user description of hike with images and links to the external web pages.).
 
