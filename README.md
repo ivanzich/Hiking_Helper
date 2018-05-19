@@ -48,7 +48,7 @@ a lot of useful links, which will redirect user to other web pages and let user 
 ## Resources
 The following libraries, APIs and datasets  were used to make this application:</p>
 
-* This application uses the
+* This application uses:
 * https://cloud.google.com/maps-platform for getting mapapis.
 * http://www.htmlcommentbox.com/ for getting comment box and possibility for uploading images
 * https://www.wunderground.com/ for getting weather API.
